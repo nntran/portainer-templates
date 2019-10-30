@@ -21,21 +21,7 @@
     {
       "name": "ENVIRONMENT_TYPE",
       "label": "Type of environment",
-      "description": "Select the environment for deployment.",
-      "select": [{
-          "text": "Production",
-          "value": "PRD",
-          "default": true
-        },
-        {
-          "text": "Development",
-          "value": "DEV"
-        },
-        {
-          "text": "Training",
-          "value": "TRA"
-        }
-      ]
+      "description": "Select the environment for deployment."
     }
   ]
 }]
