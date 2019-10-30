@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  portainer-templates:
+    image: ntdtfr/portainer-templates
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - ${pwd}/templates.json:/usr/share/nginx/html/templates.json
