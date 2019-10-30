@@ -1,124 +1,41 @@
 [{
-    "type": 2,
-    "title": "Hello World!",
-    "description": "A simple application that say Hello World!",
-    "note": "This docker image illustrate the port mapping concept.",
-    "categories": [
-      "Training"
-    ],
-    "platform": "linux",
-    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-    "repository": {
-      "url": "https://github.com/nntran/portainer-templates",
-      "stackfile": "stacks/hello-world/docker-stack.yml"
-    },
-    "env": [{
-        "name": "DOMAIN_NAME",
-        "label": "Domain name",
-        "default": "swarm.lan",
-        "description": "Your swarm cluster domain name."
-      },
-      {
-        "name": "ENVIRONMENT_TYPE",
-        "label": "Type of environment",
-        "description": "Select the environment for deployment.",
-        "select": [{
-            "text": "Production",
-            "value": "PRD",
-            "default": true
-          },
-          {
-            "text": "Development",
-            "value": "DEV"
-          },
-          {
-            "text": "Training",
-            "value": "TRA"
-          }
-        ]
-      }
-    ]
+  "type": 2,
+  "title": "Hello World!",
+  "description": "A simple application that say Hello World!",
+  "note": "This docker image illustrate the port mapping concept.",
+  "categories": [
+    "Training"
+  ],
+  "platform": "linux",
+  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+  "repository": {
+    "url": "https://github.com/nntran/portainer-templates",
+    "stackfile": "stacks/hello-world/docker-stack.yml"
   },
-  {
-    "type": 2,
-    "title": "Picture Viewer",
-    "description": "A simple application that show a picture",
-    "note": "This docker image illustrate the volume mapping concept.",
-    "categories": [
-      "Training"
-    ],
-    "platform": "linux",
-    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-    "repository": {
-      "url": "https://github.com/nntran/portainer-templates",
-      "stackfile": "stacks/pic-viewer/docker-stack.yml"
+  "env": [{
+      "name": "DOMAIN_NAME",
+      "label": "Domain name",
+      "default": "swarm.lan",
+      "description": "Your swarm cluster domain name."
     },
-    "env": [{
-        "name": "DOMAIN_NAME",
-        "label": "Domain name",
-        "default": "swarm.lan",
-        "description": "Your swarm cluster domain name."
-      },
-      {
-        "name": "ENVIRONMENT_TYPE",
-        "label": "Type of environment",
-        "description": "Select the environment for deployment.",
-        "select": [{
-            "text": "Production",
-            "value": "PRD",
-            "default": true
-          },
-          {
-            "text": "Development",
-            "value": "DEV"
-          },
-          {
-            "text": "Training",
-            "value": "TRA"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": 2,
-    "title": "Samples stack",
-    "description": "All training services in one stack",
-    "note": "Deploys all instances of training services.",
-    "categories": [
-      "Training"
-    ],
-    "platform": "linux",
-    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
-    "repository": {
-      "url": "https://github.com/nntran/portainer-templates",
-      "stackfile": "stacks/samples/docker-stack.yml"
-    },
-    "env": [{
-        "name": "DOMAIN_NAME",
-        "label": "Domain name",
-        "default": "swarm.lan",
-        "description": "Your swarm cluster domain name."
-      },
-      {
-        "name": "ENVIRONMENT_TYPE",
-        "label": "Type of environment",
-        "description": "Select the environment for deployment.",
-        "select": [{
-            "text": "Production",
-            "value": "PRD",
-            "default": true
-          },
-          {
-            "text": "Development",
-            "value": "DEV"
-          },
-          {
-            "text": "Training",
-            "value": "TRA"
-          }
-        ]
-      }
-    ]
-  }
-]
+    {
+      "name": "ENVIRONMENT_TYPE",
+      "label": "Type of environment",
+      "description": "Select the environment for deployment.",
+      "select": [{
+          "text": "Production",
+          "value": "PRD",
+          "default": true
+        },
+        {
+          "text": "Development",
+          "value": "DEV"
+        },
+        {
+          "text": "Training",
+          "value": "TRA"
+        }
+      ]
+    }
+  ]
+}]
